@@ -59,3 +59,104 @@ nav .menu .logo a {
     background-color: #fff;
     color: #1b1b1b;
 }
+
+.img {
+    background: url('../images/image1.jpeg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    animation: changeIMG 10s infinite;
+}
+
+@keyframes changeIMG {
+    0% {
+        background: url('../images/image_2.jpeg');
+    }
+
+    33.33% {
+        background: url('../images/image3.jpeg');
+    }
+
+    66.66% {
+        background: url('../images/image1.jpeg');
+    }
+
+    100% {
+        background: url('../images/image2.jpeg');
+    }
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.center .sub_title {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.center .btns {
+    margin-top: 1rem;
+}
+
+.center .btns button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 1%;
+    border: none;
+    margin: 0 0.25rem;
+    border: 3px solid #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.center .btns button:first-child {
+    color: #fff;
+    background: none;
+}
+
+@keyframes changeIMG {
+    0% {
+        background: url('../images/image2.jpeg');
+    }
+
+    33.33% {
+        background: url('../images/image3.jpeg');
+    }
+
+    66.66% {
+        background: url('../images/image1.jpeg');
+    }
+
+    100% {
+        background: url('../images/image2.jpeg');
+    }
+}
