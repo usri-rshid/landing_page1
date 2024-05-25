@@ -1,6 +1,9 @@
 # landing page 
 
 
+##### [demo live](https://usri-rshid.github.io/landing_page1/)
+
+
 
 #### ressources
 [imageresizer](https://imageresizer.com/)
